@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Deciser</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="thinkingemoji.png">
+</head>
+<body>
+    <section id="first-section">
+        <header>Rock Paper Scissors Deciser!</header>
+        
+        <div class="choice-input-container">
+            <h1 id="choice-header">Enter two choices:</h1>
+            <input type="text" placeholder="Choice 1" class="choice-input" id="choice1">
+            <input type="text" placeholder="Choice 2" class="choice-input" id="choice2">
+            <label class="warning-text" id="user-choice-input-warning">You have to enter two choices</label>
+        </div>
+
+        <div class="choice-input-container">
+            <h1 id="choice-header">Select a choice:</h1>
+            <input type="text" placeholder="Choice" class="choice-input" id="selected-choice">
+            <pre class="warning-text" id="user-selected-choice-warning">Your selected choice has to match one of the above two choices 
+                (uppercases and lowercases has to match!)</pre>
+        </div>
+        <div class="continue-button-container">
+            <button class="continue-button" id="first-page-continue-button">>>></button>
+        </div>
+    </section>
+
+    <section id="rock-paper-scissors-section">
+        <div class="game-display">
+            <p id="user-weapon">?</p>
+            <p> | vs | </p>
+            <p id="computer-weapon">?</p>
+        </div>
+        <div class="outcome-display">
+            <label id="outcome-display-text">Sample Text</label>
+        </div>
+        <div class="weapons">
+            <button class="weapon-buttons" id="rock-button">
+                👊
+            </button>
+            <button class="weapon-buttons" id="paper-button">
+                ✋
+            </button>
+            <button class="weapon-buttons" id="scissors-button">
+                ✂️
+            </button>
+        </div>
+        <div class="to-results">
+            <button id="show-results-button">>>></button>
+        </div>
+    </section>
+
+    <section id="results-section">
+        <h1 class="results-header">You Shall Choose This:</h1>
+        <label id="final-choice-text">Choice Decision 1!!</label>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

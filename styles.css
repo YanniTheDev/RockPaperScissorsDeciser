@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    overflow: hidden;
+}
+
+header, h1 {
+    text-align: center;
+    color: rgb(255, 98, 87);
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+header {
+    margin-top: 5rem;
+    font-size: 5.5rem;
+}
+h1 {
+    text-transform: uppercase;
+}
+button {
+    background-color: rgb(43, 43, 43);
+    color: rgb(255, 98, 87);
+    border: none;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
+}
+
+#first-section {
+    display: block; /* Set to block when not testing game */
+    opacity: 1;
+    transition: transform 1s ease, opacity 0.7s ease;
+}
+
+.choice-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 6rem;
+}
+#choice-header {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+#choice1 {
+    margin-right: 4rem;
+}
+.choice-input {
+    width: 250px;
+    height: 60px;
+
+    padding-left: 1rem;
+
+    color: rgb(255, 98, 87);
+    font-size: 2rem;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+
+    background-color: rgb(30, 30, 30);
+    border: solid rgb(30, 30, 30) 0.05rem;
+    border-radius: 10px;
+}
+.choice-input:hover {
+    box-shadow: 0px 0px 10px rgb(30, 30, 30);
+}
+.continue-button-container {
+    display: flex;
+    justify-content: center;
+}
+.continue-button {
+    font-size: 3rem;
+
+    margin-top: 6rem;
+
+    transition: transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+.continue-button:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 3px rgb(255, 58, 44);
+}
+.warning-text {
+    display: none;
+
+    margin-left: 2rem;
+
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    color: rgb(117, 117, 117);
+}
+
+
+
+
+
+
+#rock-paper-scissors-section {
+    display: none;
+    opacity: 0;
+    bottom: -100%;
+    
+    transition: transform 0.5s ease-in-out, translate 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.game-display {
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-display > p {
+    color: rgb(255, 98, 87);
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 5.5rem;
+}
+.outcome-display {
+    margin-top: 7rem;
+
+    display: flex;
+    justify-content: center;
+}
+.outcome-display label {
+    visibility: hidden;
+
+    color: rgb(255, 98, 87);
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+.weapons {
+    margin-top: 10rem;
+
+    display: flex;
+    justify-content: space-around;
+}
+.weapons button {
+    padding: 0rem 2rem 0rem 2rem;
+
+    background-color: rgb(255, 98, 87);
+
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: rgb(43, 43, 43);
+    border-radius: 10px;
+
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.weapons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(255, 58, 44);
+}
+.to-results {
+    margin-top: 10rem;
+
+    display: none;
+    justify-content: center;
+}
+.to-results button {
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    color: rgb(255, 98, 87);
+    background-color: transparent;
+
+    transition: transform 0.2s ease-in-out;
+}
+.to-results button:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+#results-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    bottom: -100%;
+
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+.results-header {
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: rgb(255, 98, 87);
+}
+#final-choice-text {
+    margin-top: 4rem;
+
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 98, 87);
+}
