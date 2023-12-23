@@ -15,15 +15,17 @@
             <h1 id="choice-header">Enter two choices:</h1>
             <input type="text" placeholder="Choice 1" class="choice-input" id="choice1">
             <input type="text" placeholder="Choice 2" class="choice-input" id="choice2">
-            <label class="warning-text" id="user-choice-input-warning">You have to enter two choices</label>
         </div>
+        
+        <span style="display: flex; justify-content: center;"><label class="warning-text" id="user-choice-input-warning">You have to enter two choices</label></span>
 
         <div class="choice-input-container">
             <h1 id="choice-header">Select a choice:</h1>
             <input type="text" placeholder="Choice" class="choice-input" id="selected-choice">
-            <pre class="warning-text" id="user-selected-choice-warning">Your selected choice has to match one of the above two choices 
-                (uppercases and lowercases has to match!)</pre>
         </div>
+
+        <span style="display: flex; justify-content: center;"><pre class="warning-text" id="user-selected-choice-warning">Your selected choice has to match one of the above two choices</pre></span>
+
         <div class="continue-button-container">
             <button class="continue-button" id="first-page-continue-button">>>></button>
         </div>
@@ -50,12 +52,12 @@
             </button>
         </div>
         <div class="to-results">
-            <button id="show-results-button">>>></button>
+            <button class="continue-button" id="show-results-button">>>></button>
         </div>
     </section>
 
     <section id="results-section">
-        <h1 class="results-header">You Shall Choose This:</h1>
+        <h1 class="results-header">You Shall Choose:</h1>
         <label id="final-choice-text">Choice Decision 1!!</label>
     </section>
 
