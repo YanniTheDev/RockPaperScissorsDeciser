@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+*:root {
+    color-scheme: dark;
+}
+
 body {
     background-color: rgb(43, 43, 43);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header, h1 {
@@ -15,7 +19,7 @@ header, h1 {
     font-family: monospace, Arial, Helvetica, sans-serif;
 }
 header {
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 5.5rem;
 }
 h1 {
@@ -41,7 +45,7 @@ button {
     justify-content: center;
     align-items: center;
 
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
 #choice-header {
     font-size: 1.5rem;
@@ -72,9 +76,10 @@ button {
     justify-content: center;
 }
 .continue-button {
+    font-family: monospace, Arial, Helvetica, sans-serif;
     font-size: 3rem;
 
-    margin-top: 6rem;
+    margin-top: 3rem;
 
     transition: transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 }
@@ -83,9 +88,10 @@ button {
     text-shadow: 0px 0px 3px rgb(255, 58, 44);
 }
 .warning-text {
-    display: none;
+    visibility: hidden;
 
-    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
 
     font-family: monospace, Arial, Helvetica, sans-serif;
     color: rgb(117, 117, 117);
@@ -100,6 +106,11 @@ button {
     display: none;
     opacity: 0;
     bottom: -100%;
+
+    position: absolute;
+
+    width: 100%;
+    height: 90%;
     
     transition: transform 0.5s ease-in-out, translate 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -156,17 +167,6 @@ button {
     display: none;
     justify-content: center;
 }
-.to-results button {
-    font-family: monospace, Arial, Helvetica, sans-serif;
-    font-size: 5rem;
-    color: rgb(255, 98, 87);
-    background-color: transparent;
-
-    transition: transform 0.2s ease-in-out;
-}
-.to-results button:hover {
-    transform: scale(1.2);
-}
 
 
 
@@ -177,6 +177,9 @@ button {
     align-items: center;
     opacity: 0;
     bottom: -100%;
+
+    position: absolute;
+    width: 100%;
 
     transition: transform 0.5s ease-in, opacity 0.5s ease-in;
 }
@@ -189,6 +192,6 @@ button {
     margin-top: 4rem;
 
     font-family: monospace, Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     color: rgb(255, 98, 87);
 }
